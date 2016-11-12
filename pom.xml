@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>js-modules-demo</groupId>
+  <artifactId>js-modules-demo</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>js-modules-demo</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>org.omcljs</groupId>
+      <artifactId>om</artifactId>
+      <version>1.0.0-alpha48-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>cljsjs</groupId>
+          <artifactId>react</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>cljsjs</groupId>
+          <artifactId>react-dom</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojurescript</artifactId>
+      <version>1.9.320</version>
+    </dependency>
+  </dependencies>
+</project>
